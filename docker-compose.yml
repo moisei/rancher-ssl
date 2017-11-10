@@ -11,6 +11,6 @@ services:
             - /usr/local/etc/nginx/rancher.conf:/etc/nginx/conf.d/rancher.conf
             - /usr/local/etc/nginx/ssl:/usr/local/etc/nginx/ssl
         ports:
-            - "80:80/tcp"
+            - "81:80/tcp"
             - "443:443/tcp"
         restart: always
