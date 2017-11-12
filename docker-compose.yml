@@ -1,16 +1,16 @@
 version: '2'
 
 services:
-    rancher:
-        image: rancher/server
-        container_name: rancher-server
+    rancher-ssl:
+        image: rancher/server:stable
         restart: always
+        ports:
+            - "8080:8080/tcp"
     nginx:
-        image: nginx:1.11
+        build: .
         volumes:
-            - /usr/local/etc/nginx/rancher.conf:/etc/nginx/conf.d/rancher.conf
             - /usr/local/etc/nginx/ssl:/usr/local/etc/nginx/ssl
         ports:
-            - "81:80/tcp"
+            - "80:80/tcp"
             - "443:443/tcp"
         restart: always
