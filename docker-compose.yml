@@ -4,13 +4,10 @@ services:
     rancher-ssl:
         image: rancher/server:stable
         restart: always
-        ports:
-            - "8080:8080/tcp"
     nginx:
         build: .
         volumes:
             - /usr/local/etc/nginx/ssl:/usr/local/etc/nginx/ssl
         ports:
-            - "80:80/tcp"
             - "443:443/tcp"
         restart: always
