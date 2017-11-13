@@ -2,7 +2,7 @@ version: '2'
 
 services:
     rancher-ssl:
-        image: rancher/server:stable
+        image: rancher/server:v1.6.11-rc10
         restart: always
     nginx:
         build: .
