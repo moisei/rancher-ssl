@@ -1,9 +1,6 @@
 version: '2'
 
 services:
-    rancher-ssl:
-        image: rancher/server:v1.6.11-rc10
-        restart: always
     nginx:
         build: .
         volumes:
@@ -11,3 +8,10 @@ services:
         ports:
             - "443:443/tcp"
         restart: always
+    rancher-ssl:
+        image: rancher/server:v1.6.11-rc10
+        restart: always
+        links:
+          - nginx
+        volumes:
+            - /usr/local/etc/nginx/ssl/rancher.crt:/var/lib/rancher/etc/ssl/ca.crt
