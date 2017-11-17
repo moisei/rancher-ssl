@@ -17,3 +17,4 @@ services:
           - nginx
         volumes:
             - /usr/local/etc/nginx/ssl/rancher.crt:/var/lib/rancher/etc/ssl/ca.crt
+            - /usr/local/etc/rancher/mysql:/var/lib/mysql
