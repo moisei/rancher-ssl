@@ -12,6 +12,8 @@ sudo openssl rsa -in rancher-encrypted.key -out rancher.key
 
 ## Run these commands on the host to start up Rancher and NGINX and have NGINX listen on port 443 with https
 
+cd
+
 git clone https://github.com/polinchw/rancher-ssl.git
 
 cd rancher-ssl
