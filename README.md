@@ -28,7 +28,7 @@ Point your browser to the public IP of the Rancher server and the Rancher UI wil
 
 https://public-ip
 
-![alt text](https://github.com/polinchw/monitorserver/blob/master/documentation/diagrams/vpc.png)
+![alt text](https://raw.githubusercontent.com/polinchw/rancher-ssl/master/images/rancher-startup.JPG)
 
 ## Rancher Access Control
 
