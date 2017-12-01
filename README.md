@@ -34,3 +34,4 @@ https://public-ip
 
 Once your Rancher Server is up and running you should set up a means of authentication so that only you can access the service.
 
+![alt text](https://raw.githubusercontent.com/polinchw/rancher-ssl/master/images/rancher-admin.JPG)
