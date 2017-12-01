@@ -28,6 +28,8 @@ Point your browser to the public IP of the Rancher server and the Rancher UI wil
 
 https://public-ip
 
+![alt text](https://github.com/polinchw/monitorserver/blob/master/documentation/diagrams/vpc.png)
+
 ## Rancher Access Control
 
 Once your Rancher Server is up and running you should set up a means of authentication so that only you can access the service.
