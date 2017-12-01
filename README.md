@@ -22,3 +22,13 @@ docker-compose build
 
 docker-compose up -d
 
+## Rancher Server Access
+
+Point your browser to the public IP of the Rancher server and the Rancher UI will come up.
+
+https://<public-ip>
+
+## Rancher Access Control
+
+Once your Rancher Server is up and running you should set up a means of authentication so that only you can access the service.
+
