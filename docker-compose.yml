@@ -7,6 +7,7 @@ services:
             - /usr/local/etc/nginx/ssl:/usr/local/etc/nginx/ssl
         ports:
             - "443:443/tcp"
+            - "80:80/tcp"
         restart: always
     rancher-ssl:
         image: rancher/server:v1.6.12-rc1
