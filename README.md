@@ -1,7 +1,7 @@
 # rancher-ssl
 Fires up Rancher and NGINX with Docker and has NGINX listen with an ssl reverse-proxy for Rancher traffic.
 
-## Run these command on the host to create a self-signed SSL cert:
+## Run these command on the Rancher server host to create a self-signed SSL cert:
 sudo mkdir -p /usr/local/etc/nginx/ssl
 
 cd /usr/local/etc/nginx/ssl
