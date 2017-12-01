@@ -26,7 +26,7 @@ docker-compose up -d
 
 Point your browser to the public IP of the Rancher server and the Rancher UI will come up.
 
-https://<public-ip>
+https://<<public-ip>>
 
 ## Rancher Access Control
 
