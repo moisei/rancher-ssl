@@ -8,14 +8,13 @@ services:
         ports:
             - "443:443/tcp"
             - "80:80/tcp"
-        restart: always
+        restart: on-failure
     rancher-ssl:
         image: rancher/server:preview
-        restart: always
+        restart: on-failure
         ports:
           - "8080:8080/tcp"
         links:
           - nginx
         volumes:
             - /usr/local/etc/nginx/ssl/rancher.crt:/var/lib/rancher/etc/ssl/ca.crt
-            - /usr/local/etc/rancher/mysql:/var/lib/mysql
