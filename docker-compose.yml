@@ -1,21 +1,11 @@
 version: '2'
 
 services:
-    nginx:
-        build: .
-        volumes:
-            - /usr/local/etc/nginx/ssl:/usr/local/etc/nginx/ssl
-        ports:
-            - "443:443/tcp"
-            - "80:80/tcp"
-        restart: always
     rancher-ssl:
         image: rancher/server:preview
         restart: always
         ports:
-          - "8080:8080/tcp"
-        links:
-          - nginx
+          - "80:80/tcp"
+          - "443:443/tcp"
         volumes:
-            - /usr/local/etc/nginx/ssl/rancher.crt:/var/lib/rancher/etc/ssl/ca.crt
             - /usr/local/etc/rancher/mysql:/var/lib/mysql
